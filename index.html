@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="search-bar">
+        <input class="input-search" type="text" placeholder="Enter your text" required>
+        <i class="fa-solid fa-magnifying-glass toggle-search"></i>
+    </div>
+    <script>
+        let input = document.querySelector('.toggle-search')
+        let searchBar = document.querySelector('.search-bar')
+        input.addEventListener('click', ()=> {
+            searchBar.classList.toggle('active')
+        })
+    </script>
+    
+</body>
+</html>
